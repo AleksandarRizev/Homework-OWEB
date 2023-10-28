@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pizza Shop 2.0</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="2">
+                <div class="center">
+                    <b>Pizza Shop 2.0</b>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Name</td>
+            <td>
+                <form action="https://pizzametro.mk/" method="post">
+                    <input type="text" name="name" id="name">
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pizza Topping</td>
+            <td>
+                <form>
+                    <label>
+                        <input type="radio" name="Topping" value="Supreme"> Supreme<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="Topping" value="Vegetarian"> Vegetarian<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="Topping" value="Hawaiian"> Hawaiian<br>
+                    </label>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pizza Sauce</td>
+            <td>
+                <form>
+                    <select id="sauce" name="sauce">
+                        <option value="Tomato">Tomato</option>
+                        <option value="Alfredo">Alfredo</option>
+                        <option value="Pesto">Pesto</option>
+                        <option value="BBQ">BBQ</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Optional Extras</td>
+            <td>
+                <form>
+                    <label>
+                        <input type="checkbox" name="extra" value="Extra Cheese"> Extra Cheese
+                    </label>
+                    <label>
+                        <input type="checkbox" name="extra" value="Gluten Free Base"> Gluten Free Base
+                    </label>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Delivery Instructions
+                <form action="https://pizzametro.mk/" method="post">
+                    <textarea name="delivery_instructions" id="delivery_instructions" rows="4" cols="50"></textarea>
+                </form>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <form action="https://pizzametro.mk/" method="post">
+                    <input type="submit" value="Send my Order">
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
