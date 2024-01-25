@@ -1,0 +1,30 @@
+<div [ngClass]="klasi()" [ngStyle]="boja()"> 
+    <div class = "course-title">
+        {{reden+'. '+vozac.name}}
+    </div>
+    
+    <ng-template #noImg>
+        <p>Nema slika</p>
+    </ng-template>
+
+    <img [src]="vozac.iconUrl" *ngIf="vozac.iconUrl else noImg">
+
+    <div class = "course-description">
+        {{vozac.team}}
+    </div>
+
+    <div>
+        Points:{{vozac.points}}
+    </div>
+
+    <div class = "course-category" [ngSwitch]="vozac"> 
+        <div class = "category" *ngSwitchCase="'Veteran'">Legenda</div>
+        <div class = "category" *ngSwitchCase="'Upcoming'">Super</div>
+        <div class = "category" *ngSwitchCase="'Rookie'">Soliden</div>
+
+    </div>
+
+    <button (click)="klik()">Klikni me!</button>
+
+
+</div>
